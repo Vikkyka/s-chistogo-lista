@@ -1,4 +1,7 @@
-h1,h2,h3,h4,h5,h6 {font-size:inherit;font-weight:inherit;} 
+h1,h2,h3,h4,h5,h6 {
+    font-size:inherit;
+    font-weight:inherit;
+} 
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     margin: 0;
@@ -20,10 +23,10 @@ body {
     width: 360px;
     height: 140px;
     padding: 24px 20px;
-    box-sizing: border-box; /* внутренние отступы не увеличивают хедер */
+    box-sizing: border-box;
 }
 
-footer{
+footer {
     display: flex; /* сделали флекс-контейнером */
     justify-content:space-between; /* расположили элементы по краям */
     background-color: black;
@@ -80,12 +83,11 @@ footer{
     background-position: 0px 31px;
     background-size: 95% auto;
     background-repeat: no-repeat;
-    background-image: url(./images/cover.svg); /* не работает */
-    
-}
+    background-image: url(./images/cover.svg);  
+} /* background-image не работает */  
 
 /* Текстовые блоки */
-.accent-span{
+.accent-span {
     width: 55px; 
     height: 72px;
     display:block;
@@ -95,15 +97,14 @@ footer{
 }
 
 /* Текстовые блоки по центру */
-.text-center{
+.text-center {
     width: 239px; 
     margin-left: 49px;
     margin-top: 0;
-
 }
 
 /* Текстовые блоки справа */
-.text-right{
+.text-right {
     width: 170.5px; 
     margin-left: 170px;
     margin-top: 0;
@@ -249,7 +250,6 @@ footer{
 
 .card_color_black {
     background-color: #343434; 
-
 }
 
 .card_color_yellow {
@@ -317,7 +317,6 @@ img {
 
 h1 {
     font-family: 'EB Garamond', 'Arial', sans-serif; 
-
 } 
 
 h2 {
