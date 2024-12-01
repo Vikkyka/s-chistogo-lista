@@ -1,0 +1,334 @@
+h1,h2,h3,h4,h5,h6 {font-size:inherit;font-weight:inherit;} 
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin:0; /* обнуляем все отступы */
+    font-family: 'Inter', 'Arial', sans-serif;
+    background-color: #ba7a7a;
+}
+
+.header {
+    display: flex; /* сделали флекс-контейнером */
+    justify-content:space-between; /* расположили элементы по краям */
+    background-color: black;
+    color: white;
+    margin:auto; /* распологает секцию посередине body */
+    width: 360px;
+    height: 140px;
+    padding: 24px 20px;
+    box-sizing: border-box; /* внутренние отступы не увеличивают хедер */
+}
+
+footer{
+    display: flex; /* сделали флекс-контейнером */
+    justify-content:space-between; /* расположили элементы по краям */
+    background-color: black;
+    color: #F5F5F5;
+    width: 360px;
+    height: 62px;
+    margin:auto; /* распологает секцию посередине body */
+    padding: 20px;
+    box-sizing: border-box; /* внутренние отступы не увеличивают футер */
+    border: 1px solid #FEE42A; /* граница */
+}
+
+.content-section {
+    width: 360px;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin:auto; /* распологает секцию посередине body */
+}
+
+.yellow-content {
+    background-color: #FEE42A;
+}
+
+.black-content {
+    background-color: black;
+    color: white;
+}
+
+.header-logo {
+    width: 78.45px;
+    height: 15.43px;
+}
+
+.header-menu {
+    width: 75px; 
+    height: 84px;
+    line-height: 24px;
+    display: flex;
+}
+
+.header-menu-list {
+    width: 75px; 
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.cover {
+    width: 360px; 
+    height: 230px;
+    padding: 0;
+    background-position: 0px 31px;
+    background-size: 95% auto;
+    background-repeat: no-repeat;
+    background-image: url(./images/cover.svg); /* не работает */
+    
+}
+
+/* Текстовые блоки */
+.accent-span{
+    width: 55px; 
+    height: 72px;
+    display:block;
+    font-size: 72px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Текстовые блоки по центру */
+.text-center{
+    width: 239px; 
+    margin-left: 49px;
+    margin-top: 0;
+
+}
+
+/* Текстовые блоки справа */
+.text-right{
+    width: 170.5px; 
+    margin-left: 170px;
+    margin-top: 0;
+}
+
+.intro {
+    height: 520px;
+    padding: 33px 20px 34px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0px;
+    font-size: 16;
+}
+
+/* контейнер для заголовка */
+.intro__heading {
+    width: 320px; 
+    height: 41px; 
+    margin:0px 0px 0px;
+    display: flex;
+    justify-content: space-between; /* работает только с блоками */
+    color: #CCCCCC;
+    line-height: 120%;
+}
+
+/* заголовок */
+.intro__title {
+    width: 203px; 
+    height: 38px;
+    /* margin: 0; */
+}
+
+/* дата */
+.intro__date {
+    width: 101px; 
+    height: 19px;
+}
+
+/* контейнер для текста */
+.intro__main-text {
+    color: #F5F5F5;
+    width: 320px; 
+    line-height: 21.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    row-gap: 0px;
+}
+
+.intro__main-text_1 {
+    height: 281px;
+    line-height: 21.9px;
+}
+
+.intro__main-text_2 {
+    height: 87px;
+}
+
+.reasons {
+    width: 360px; 
+    height: 1368px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.content-section__subtitle {
+    width: 320px; 
+    height: 63px;
+    font-size: 28px;
+    line-height: 115%;
+    color: #131313;
+}
+
+.reasons_text-right {
+    margin-left: 80px;
+}
+
+.reasons_accent-span {
+    margin-bottom: 16px;
+}
+
+.content-section__introduction {
+    width: 320px; 
+    height: 297px;
+    line-height: 27px;
+    font-size: 20px;
+}
+
+.content-section__list {
+    width: 304px; 
+    height: 865px;
+    line-height: 21.6px;
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+.how-to {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px; /* не работает */
+    height: 1850px;
+}
+
+.how-to_text-right {
+    margin-left: 95px;
+    letter-spacing: 0.3px;
+    height: 32px;
+
+}
+
+.how-to_accent-span {
+    margin-top: 5px;
+}
+
+.how-to_content-section__subtitle {
+    font-size: 28px;
+    height: 64px;
+}
+
+.how-to_content-section__introduction {
+    width: 320px; 
+    height: 135px;
+    line-height: 135%;
+    font-size: 20px;
+}
+
+/* это список карточек */
+.cards-list {
+    width: 320px; 
+    height: 1483px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.card {
+    width: 320px; 
+    height: 495px; 
+    border-radius: 30px
+}
+
+.card_color_black {
+    background-color: #343434; 
+
+}
+
+.card_color_yellow {
+    background-color: #FEE42A;
+    color: black;
+}
+
+.card__author {
+    height: 125px;
+    margin: 20px auto auto 20px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 279px; 
+    height: 319px; 
+    margin:auto;
+}
+
+.card__title {
+    line-height: 135%;
+    font-size: 22px;  
+    letter-spacing: 0.4px;
+}
+
+.card__title_black {
+    margin: 12px 0 auto;
+}
+
+.card__title_yellow {
+    margin: 23px 20px auto;
+}
+
+.card__text {
+    width: 279px;
+    line-height: 21.6px;
+    font-size: 16px;
+    
+}
+
+.card__text_yellow {
+    margin: 10px 20px 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-copyright {
+    width: 92px; 
+    height: 22px;
+} /* размеры © VЁRSTKA */
+
+.footer-list {
+    width: 73px; 
+    height: 18px; 
+    display: flex; 
+    justify-content:space-between;
+} /* параметры списка из футера */
+
+/* Шрифты */
+
+h1 {
+    font-family: 'EB Garamond', 'Arial', sans-serif; 
+
+} 
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 135%;
+    margin-top: 5px;
+}
+
+
+
+
+
+
