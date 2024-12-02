@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- /* разобраться */ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- /* разобраться */ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <title>С чистого листа</title>
     <link rel="icon" href="https://code.s3.yandex.net/web-code/images/playlist-favicon.ico"/> <!-- /* иконка */ -->
     <link rel="stylesheet" href="fonts/fonts.css"/>
@@ -16,7 +16,7 @@
         <img class="header-logo" src="images/logo.svg" 
         alt="Логотип" /> 
       </a>
-      <nav class="header-menu">
+      <nav>
         <ul class="header-menu-list" style="list-style-type: none;"> 
           <li>Главная</li>
           <li style="text-decoration: underline">О нас</li>
@@ -27,7 +27,7 @@
 
     <main>
       <!-- cover -->
-      <section class="cover content-section black-content" style="background-image: url(./images/cover.svg);"> 
+      <section class="cover content-section black-content"> 
           <h1 >
             <span class="accent-span">С</span>  
             <span class="accent-span text-center">чистого</span>
@@ -44,10 +44,10 @@
           </time>
         </header>
         <div class="intro__main-text">
-          <p class ="intro__main-text_1">
+          <p>
             Начинать что-то новое — тяжело и страшно. Даже если это просто небольшой фрагмент кода. Или текст. Например, прежде чем написать здесь что-то вразумительное, автор(ка) этого материала заварила чай, позвонила бабушке узнать, как поживают на даче огурцы с помидорами (окей, это правда важно), 10 минут ходила туда-сюда по комнате, протёрла пыль на столе и заварила чай ещё раз, потому что он остыл. Всё это время с монитора на неё смотрел чистый лист.
           </p>
-          <p class ="intro__main-text_2">
+          <p>
             Прокрастинировать перед тем, как начать что-то делать (особенно что-то новое) — нормальная реакция мозга. Разберёмся, почему это происходит.
           </p>
         </div>
@@ -76,7 +76,7 @@
       <!-- how-to -->
       <section class="how-to content-section black-content"> <!-- чёрный блок-->
         <header class="how-to_content-section__subtitle">
-          <h1>
+          <h1 class="how-to_titly">
             <span class="how-to_text-right">Как всё-таки начать</span> 
             <span class="how-to_accent-span">что-то делать</span>
           </h1>
@@ -96,25 +96,25 @@
             </div>
             <div class="card__content"> <!-- блок с цитатой-->
               <h1 class="card__title card__title_black">Начать любыми словами</h1>
-              <p class="card__text">Любыми — без шуток. Если не верите нам, посмотрите, например, чем открывается эссе Алексея Поляринова «Чарли Кауфман: расширение пространства». Можно и менее радикально. Главное, чтобы пустую страницу начали заполнять символы. Получится своеобразная ловушка для мозга: он видит, что вы уже начали что-то делать, и ему становится легче войти в состояние потока.</p>
+              <p>Любыми — без шуток. Если не верите нам, посмотрите, например, чем открывается эссе Алексея Поляринова «Чарли Кауфман: расширение пространства». Можно и менее радикально. Главное, чтобы пустую страницу начали заполнять символы. Получится своеобразная ловушка для мозга: он видит, что вы уже начали что-то делать, и ему становится легче войти в состояние потока.</p>
             </div>
           </article>
 
           <!-- жёлтый блок-->
-          <article class="card card_color_yellow" style ="width: 320px; height: 370px;"> 
+          <article class="card card_color_yellow"> 
             <h1 class="card__title card__title_yellow">Поставить перед собой рамку для фотографии</h1>
             <p class="card__text card__text_yellow">Самую обычную: 10 на 15 сантиметров. Уже от одного ощущения, что предстоит работа над большой и сложной задачей, может пропасть всякое желание за неё браться. В такие моменты хорошо помогает загнать задачу в рамки — в прямом смысле. Сосредоточьтесь на том, чтобы заполнить только пространство 10х15 сантиметров. Что дальше — пока неважно.</p>
           </article>
 
-          <article class="card card_color_black" style ="width: 320px; height: 558px;"> <!-- блок с Буниным-->
+          <article class="card card_color_black"> <!-- блок с Буниным-->
             <div class="card__author"> <!-- блок с автором-->
               <img src="images/bunin.png"
               alt="Фотография Ивана Бунина" />
               <h2>Иван Бунин</h2>
             </div>
-            <div class="card__content" style ="width: 279px; height: 383px;"> <!-- блок с цитатой-->
+            <div class="card__content"> <!-- блок с цитатой-->
               <h1 class="card__title card__title_black">Сделать из задачи рутину</h1>
-              <p class="card__text">«Писать стихи нужно каждый день, подобно тому как скрипач или пианист непременно должен каждый день без пропусков по нескольку часов играть на своём инструменте. В противном случае ваш талант неизбежно оскудеет, высохнет, подобно колодцу, откуда долгое время не берут воду. А о чём писать? О чём угодно. Если у вас в данное время нет никакой темы, идеи, то пишите просто обо всём, что увидите», — такой совет своему приятелю дал Иван Бунин. Нет повода ему не следовать.</p>
+              <p>«Писать стихи нужно каждый день, подобно тому как скрипач или пианист непременно должен каждый день без пропусков по нескольку часов играть на своём инструменте. В противном случае ваш талант неизбежно оскудеет, высохнет, подобно колодцу, откуда долгое время не берут воду. А о чём писать? О чём угодно. Если у вас в данное время нет никакой темы, идеи, то пишите просто обо всём, что увидите», — такой совет своему приятелю дал Иван Бунин. Нет повода ему не следовать.</p>
             </div>
           </article>
         </div>
@@ -122,12 +122,12 @@
     </main>
 
     <footer>
-      <div class="footer-copyright">
+      <div>
         © VЁRSTKA
       </div>
       <div class="footer-list"> 
-        <p style="width: 19px; height: 18px;"> ВК</p>
-        <p style="width: 38px; height: 18px;">Ютуб</p>
+        <p>ВК</p>
+        <p>Ютуб</p>
       </div>
     </footer>
   </body>
