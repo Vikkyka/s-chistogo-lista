@@ -1,288 +1,272 @@
-h1,h2,h3,h4,h5,h6 {
-    font-size:inherit;
-    font-weight:inherit;
-} 
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3, h4, h5 {
+  font-family: "EB Garamond", "Arial", sans-serif;
+}
+
+h2 {
+  font-family: "Inter", "Arial", sans-serif;
 }
 
 body {
-    margin:0; /* обнуляем все отступы */
-    font-family: 'Inter', 'Arial', sans-serif;
+  margin: 0;
+  font-family: "Inter", "Arial", sans-serif;
 }
 
 .content-section {
-    width: 360px;
-    box-sizing: border-box;
-    padding: 26px 20px;
-    margin:auto; /* распологает секцию посередине body */
+  width: 360px;
+  box-sizing: border-box;
+  padding: 26px 20px;
+  margin: auto;
 }
 
 .yellow-content {
-    background-color: #FEE42A;
+  background-color: #fee42a;
 }
 
 .black-content {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .header {
-    display: flex; /* сделали флекс-контейнером */
-    justify-content:space-between; /* расположили элементы по краям */
-    background-color: black;
-    color: #F5F5F5;
-    margin:auto; /* распологает секцию посередине body */
-    width: 360px;
-    height: 140px;
-    padding: 24px 20px;
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 19px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: #f5f5f5;
+  margin: auto;
+  width: 360px;
+  min-height: 140px;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .header-logo {
-    width: 78.45px;
-    height: 15.43px;
+  width: 78.45px;
+  height: 15.43px;
 }
 
 .header-menu-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    list-style-type: none;
-    row-gap: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  list-style-type: none;
+  row-gap: 13px;
+}
+
+a {
+    color: #F5F5F5;
+}
+
+.menu-list {
+  text-decoration: none;
 }
 
 .cover {
-    padding-top: 7px;
-    background-position: 0px 21px;
-    background-size: 95% auto;
-    background-repeat: no-repeat;
-    background-image: url(../images/cover.svg);
-    height: 221px;
+  padding: 7px 25px 13px 0;
+  background-position: 0 21px;
+  background-size: 95% auto;
+  background-repeat: no-repeat;
+  background-image: url(../images/cover.svg);
+  font-size: 72px;
+  line-height: 100%;
 }
 
-/* Текстовые блоки */
 .accent-span {
-    display:block;
-    font-size: 72px;
-    margin: -18px -20px auto;
+  display: block;
 }
 
-/* Текстовые блоки по центру */
+.text-left {
+    margin-top: -9px;
+}
+
 .text-center {
-    margin: -23px 37px auto;
+  text-align: center;
 }
 
-/* Текстовые блоки справа */
 .text-right {
-    margin-left: 155px;
-    margin-top: -22px;
+  text-align: right;
 }
 
 .intro {
-    padding: 40px 20px 34px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 25px;
-    font-size: 16;
+  padding: 33px 20px 34px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  font-size: 16px;
 }
 
-/* контейнер для заголовка */
 .intro__heading {
-    margin:-7px 1px 0px;
-    display: flex;
-    justify-content: space-between; /* работает только с блоками */
-    color: #CCCCCC;
-    line-height: 120%;
-    width: 320px;
-    height: 38px;
+  margin: -7px 1px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: #cccccc;
+  line-height: 120%;
+  width: 320px;
 }
 
 .intro__title {
-    width: 203px;
-    height: 38px;
-}
-/* дата */
-.intro__date {
-    /* margin: 0px 12px; */
-    text-align: right;
-    width: 101px;
-    height: 19px;
+  width: 203px;
 }
 
-/* контейнер для текста */
+.intro__date {
+  text-align: right;
+  width: 101px;
+}
+
 .intro__main-text {
-    line-height: 21.9px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    row-gap: 19px;
+  line-height: 21.9px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  row-gap: 19px;
 }
 
 .reasons {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-    padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-top: 25px;
 }
 
 .content-section__subtitle {
-    font-size: 28px;
-    line-height: 115%;
-    letter-spacing: 0.2px;
-    margin-top: 13px;
-}
-
-.reasons_text-right {
-    margin-left: 80px;
+  font-size: 28px;
+  line-height: 115%;
+  letter-spacing: 0.4px;
+  margin-top: 13px;
 }
 
 .reasons_accent-span {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .content-section__introduction {
-    line-height: 27px;
-    font-size: 20px;
+  line-height: 27px;
+  font-size: 20px;
 }
 
 .content-section__list {
-    line-height: 21.6px;
-    font-size: 16px;
-    margin-left: 16px;
+  line-height: 21.6px;
+  font-size: 16px;
+  margin-left: 16px;
 }
 
 .how-to {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px; 
-    /* height: 1850px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
 }
 
 .how-to_content-section__subtitle {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .how-to_titly {
-    margin-top: 10px;
-}
-
-
-.how-to_text-right {
-    margin-left: 95px;
-    letter-spacing: 0.3px;
+  margin-top: 10px;
+  letter-spacing: 0.3px;
 }
 
 .how-to_content-section__introduction {
-    line-height: 135%;
-    font-size: 20px;
-    margin-top: -5px;
+  line-height: 135%;
+  font-size: 20px;
+  margin-top: -5px;
 }
 
-/* это список карточек */
 .cards-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-    margin-bottom: 34px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-bottom: 34px;
 }
 
 .card {
-    /* width: 320px;
-    height: 495px; */
-    border-radius: 30px
+  border-radius: 30px;
 }
 
 .card_color_black {
-    background-color: #343434;
+  background-color: #343434;
 }
 
 .card_color_yellow {
-    background-color: #FEE42A;
-    color: black;
+  background-color: #fee42a;
+  color: black;
 }
 
 .card__author {
-    height: 125px;
-    margin: 20px auto auto 20px;
+  margin: 20px auto auto 20px;
+}
+
+.card__author-name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 135%;
+  margin-top: 5px;
 }
 
 .card__content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-    width: 279px;
-    margin:auto;
-    line-height: 21.6px;
-    font-size: 16px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 279px;
+  margin: auto;
+  line-height: 21.6px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .card__title {
-    line-height: 135%;
-    font-size: 22px;
-    letter-spacing: 0.4px;
+  line-height: 135%;
+  font-size: 22px;
+  letter-spacing: 0.4px;
 }
 
 .card__title_black {
-    margin: 12px 0 auto;
+  margin: 6px 0 auto;
 }
 
 .card__title_yellow {
-    margin: 23px 20px auto;
+  margin: 23px 20px auto;
 }
 
 .card__text_yellow {
-    line-height: 21.6px;
-    font-size: 16px;
-    margin: 5px 20px 20px;
+  line-height: 21.6px;
+  font-size: 16px;
+  margin: 5px 20px 20px;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 footer {
-    display: flex; /* сделали флекс-контейнером */
-    justify-content:space-between; /* расположили элементы по краям */
-    background-color: black;
-    color: #F5F5F5;
-    width: 360px;
-    margin:auto; /* распологает секцию посередине body */
-    padding: 20px;
-    box-sizing: border-box; /* внутренние отступы не увеличивают футер */
-    border: 1px solid #FEE42A; /* граница */
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: #f5f5f5;
+  width: 360px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #fee42a;
 }
 
 .footer-list {
-    width: 73px;
-    display: flex;
-    justify-content:space-between;
-    font-size: 14px;
-} /* параметры списка из футера */
-
-/* Шрифты */
-
-h1 {
-    font-family: 'EB Garamond', 'Arial', sans-serif;
-} 
-
-h2 {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 135%;
-    margin-top: 5px;
+  width: 73px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  list-style-type: none;
 }
-
-
-
-
-
-
