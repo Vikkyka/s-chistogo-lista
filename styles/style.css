@@ -8,12 +8,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   padding: 0;
 }
 
-h1, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-family: "EB Garamond", "Arial", sans-serif;
-}
-
-h2 {
-  font-family: "Inter", "Arial", sans-serif;
 }
 
 body {
@@ -74,8 +70,8 @@ a {
 }
 
 .cover {
-  padding: 7px 25px 13px 0;
-  background-position: 0 21px;
+  padding: 7px 22px 13px 20px;
+  background-position: right bottom;
   background-size: 95% auto;
   background-repeat: no-repeat;
   background-image: url(../images/cover.svg);
@@ -118,6 +114,7 @@ a {
 
 .intro__title {
   width: 203px;
+  font-family: "Inter", "Arial", sans-serif;
 }
 
 .intro__date {
